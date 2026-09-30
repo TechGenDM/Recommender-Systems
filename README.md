@@ -67,21 +67,21 @@ The modules below are ordered sequentially. Each topic builds directly on the th
 
 | # | Topic | Key Concepts | Focus | Status |
 |:---:|:---|:---|:---:|:---:|
-| **01** | [Making Recommendations](#01-making-recommendations) | Problem formulation, explicit vs. implicit feedback, recommendation matrix | 🧠 Concept | 📝 Planned |
-| **02** | [Using Per-Item Features](#02-using-per-item-features) | Content-based linear regression, parameter optimization per user | 📐 Math & Logic | 📝 Planned |
-| **03** | [Collaborative Filtering Algorithm](#03-collaborative-filtering-algorithm) | Joint optimization, latent factors $w^{(u)}$, $x^{(i)}$, simultaneous gradient descent | 📐 Math & Algo | 📝 Planned |
-| **04** | [Binary Labels: Favs, Likes, and Clicks](#04-binary-labels-favs-likes-and-clicks) | Implicit feedback, logistic loss, binary cross-entropy formulation | 📐 Formulation | 📝 Planned |
-| **05** | [Mean Normalization](#05-mean-normalization) | Cold-start mitigation, unrated items, baseline offset adjustment | 💡 Intuition | 📝 Planned |
-| **06** | [TensorFlow Implementation of Collaborative Filtering](#06-tensorflow-implementation-of-collaborative-filtering) | Vectorization, `tf.Variable`, AutoDiff with `tf.GradientTape`, custom loss | 💻 Code / TF | 📝 Planned |
-| **07** | [Finding Related Items](#07-finding-related-items) | Latent space distance, Euclidean distance $\|x^{(i)} - x^{(k)}\|^2$, Cosine similarity | 📐 Math & Logic | 📝 Planned |
-| **08** | [Collaborative Filtering vs. Content-Based Filtering](#08-collaborative-filtering-vs-content-based-filtering) | Comparative trade-off matrix, cold-start vulnerability, scaling properties | ⚖️ Analysis | 📝 Planned |
-| **09** | [Deep Learning for Content-Based Filtering](#09-deep-learning-for-content-based-filtering) | Two-tower neural architectures, user embeddings $v_u$, item embeddings $v_m$ | 🧠 Deep Learning | 📝 Planned |
-| **10** | [Recommending from a Large Catalogue](#10-recommending-from-a-large-catalogue) | Two-stage pipeline: Retrieval (Candidate Generation) + Ranking, Vector Indexing | 🚀 Scale & Sys | 📝 Planned |
-| **11** | [Ethical Use of Recommender Systems](#11-ethical-use-of-recommender-systems) | Filter bubbles, engagement traps, algorithmic bias, fairness, transparency | 🛡️ Ethics | 📝 Planned |
-| **12** | [TensorFlow Implementation of Content-Based Filtering](#12-tensorflow-implementation-of-content-based-filtering) | Two-tower network in Keras/TF, dot-product output layer, evaluation | 💻 Code / TF | 📝 Planned |
-| **13** | [Reducing the Number of Features (Optional)](#13-reducing-the-number-of-features-optional) | High-dimensionality curse, compression, variance preservation intuition | 🔍 Extension | 📝 Planned |
-| **14** | [PCA Algorithm (Optional)](#14-pca-algorithm-optional) | Covariance matrix, projection, eigenvalue decomposition, singular value decomposition | 📐 Math / Algo | 📝 Planned |
-| **15** | [PCA in Code (Optional)](#15-pca-in-code-optional) | From-scratch NumPy implementation, Scikit-Learn comparison, visualization | 💻 Code | 📝 Planned |
+| **01** | [Making Recommendations](<./1. Making recommendations.md>) | Problem formulation, explicit vs. implicit feedback, recommendation matrix | 🧠 Concept | ✅ Completed |
+| **02** | [Using Per-Item Features](<./2. Using Per-Item Features.md>) | Content-based linear regression, parameter optimization per user | 📐 Math & Logic | ✅ Completed |
+| **03** | [Collaborative Filtering Algorithm](<./3. Collaborative Filtering Algorithm.md>) | Joint optimization, latent factors $w^{(u)}$, $x^{(i)}$, simultaneous gradient descent | 📐 Math & Algo | ✅ Completed |
+| **04** | [Binary Labels: Favs, Likes, and Clicks](<./4. Binary Labels: Favourites, Likes & Clicks.md>) | Implicit feedback, logistic loss, binary cross-entropy formulation | 📐 Formulation | ✅ Completed |
+| **05** | [Mean Normalization](<./5. Mean Normalization.md>) | Cold-start mitigation, unrated items, baseline offset adjustment | 💡 Intuition | ✅ Completed |
+| **06** | [TensorFlow Implementation of Collaborative Filtering](<./6. TensorFlow Implementation of Collaborative Filtering.md>) | Vectorization, `tf.Variable`, AutoDiff with `tf.GradientTape`, custom loss | 💻 Code / TF | ✅ Completed |
+| **07** | [Finding Related Items](<./7. Finding Related Items.md>) | Latent space distance, Euclidean distance $\|x^{(i)} - x^{(k)}\|^2$, Cosine similarity | 📐 Math & Logic | ✅ Completed |
+| **08** | [Collaborative Filtering vs. Content-Based Filtering](<./8. Collaborative Filtering vs. Content-Based Filtering.md>) | Comparative trade-off matrix, cold-start vulnerability, scaling properties | ⚖️ Analysis | ✅ Completed |
+| **09** | [Deep Learning for Content-Based Filtering](<./9. Deep Learning for Content-Based Filtering.md>) | Two-tower neural architectures, user embeddings $v_u$, item embeddings $v_m$ | 🧠 Deep Learning | ✅ Completed |
+| **10** | [Recommending from a Large Catalogue](<./10. Recommending from a Large Catalogue.md>) | Two-stage pipeline: Retrieval (Candidate Generation) + Ranking, Vector Indexing | 🚀 Scale & Sys | ✅ Completed |
+| **11** | [Ethical Use of Recommender Systems](<./11. Ethical Use of Recommender Systems.md>) | Filter bubbles, engagement traps, algorithmic bias, fairness, transparency | 🛡️ Ethics | ✅ Completed |
+| **12** | [TensorFlow Implementation of Content-Based Filtering](<./12. TensorFlow Implementation of Content-Based Filtering.md>) | Two-tower network in Keras/TF, dot-product output layer, evaluation | 💻 Code / TF | ✅ Completed |
+| **13** | [Reducing the Number of Features (Optional)](<./13. Reducing the Number of Features.md>) | High-dimensionality curse, compression, variance preservation intuition | 🔍 Extension | ✅ Completed |
+| **14** | [PCA Algorithm (Optional)](<./14. PCA Algorithm.md>) | Covariance matrix, projection, eigenvalue decomposition, singular value decomposition | 📐 Math / Algo | ✅ Completed |
+| **15** | [PCA in Code (Optional)](<./15. PCA in Code.md>) | From-scratch NumPy implementation, Scikit-Learn comparison, visualization | 💻 Code | ✅ Completed |
 
 ---
 
@@ -89,12 +89,12 @@ The modules below are ordered sequentially. Each topic builds directly on the th
 
 ### Phase 1: Problem Formulation & Feature-Driven Baselines
 
-#### [01. Making Recommendations](01_making_recommendations.md)
+#### [01. Making Recommendations](<./1. Making recommendations.md>)
 - **Intuition**: Why recommendations are distinct from standard supervised classification and regression.
 - **Formulation**: The user-item interaction matrix $R$, where $r(i,j) = 1$ if user $j$ rated item $i$, and $y^{(i,j)}$ is the rating value.
 - **Challenges**: Sparsity (typically $>99\%$ sparse), scale, and the cold-start dilemma.
 
-#### [02. Using Per-Item Features](02_using_per-item-features.md)
+#### [02. Using Per-Item Features](<./2. Using Per-Item Features.md>)
 - **Concept**: Leveraging item metadata $x^{(i)}$ (e.g., romance vs. action score) to learn personalized user preference vectors $w^{(j)}$ and bias $b^{(j)}$.
 - **Model**: Predicted rating $\hat{y}^{(i,j)} = w^{(j)} \cdot x^{(i)} + b^{(j)}$.
 - **Cost Function**: Regularized Mean Squared Error (MSE) optimized across rated items for each user independently.
@@ -103,30 +103,30 @@ The modules below are ordered sequentially. Each topic builds directly on the th
 
 ### Phase 2: Collaborative Filtering & Latent Factor Models
 
-#### [03. Collaborative Filtering Algorithm](03_collaborative_filtering_algorithm.md)
+#### [03. Collaborative Filtering Algorithm](<./3. Collaborative Filtering Algorithm.md>)
 - **The Core Breakthrough**: What if we don't have explicit item features? We can learn user preferences $w^{(j)}$ and item features $x^{(i)}$ *simultaneously*.
 - **Unified Objective Function**:
   $$J(w, b, x) = \frac{1}{2} \sum_{(i,j): r(i,j)=1} \left( w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)} \right)^2 + \frac{\lambda}{2} \sum_{j=1}^{n_u} \sum_{k=1}^n (w_k^{(j)})^2 + \frac{\lambda}{2} \sum_{i=1}^{n_m} \sum_{k=1}^n (x_k^{(i)})^2$$
 - **Optimization**: Gradient updates alternating or running jointly over parameter tensors.
 
-#### [04. Binary Labels: Favs, Likes, and Clicks](04_binary_labels_favs_likes_and_clicks.md)
+#### [04. Binary Labels: Favs, Likes, and Clicks](<./4. Binary Labels: Favourites, Likes & Clicks.md>)
 - **Implicit Feedback Reality**: Real-world platforms rarely collect 1-5 star ratings; interactions are binary (click, like, favorite, watch $>30\text{s}$).
 - **Probabilistic Formulation**: Predicting $P(y^{(i,j)}=1) = g(w^{(j)} \cdot x^{(i)} + b^{(j)})$, where $g(z) = \frac{1}{1 + e^{-z}}$.
 - **Loss Function**: Binary Cross-Entropy applied to interaction signals.
 
-#### [05. Mean Normalization](05_mean_normalization.md)
+#### [05. Mean Normalization](<./5. Mean Normalization.md>)
 - **The Cold-User Problem**: For a new user with zero ratings, standard regularization shrinks $w^{(j)} \to 0$, predicting zero for everything.
 - **Normalization Strategy**: Subtract the mean rating $\mu_i$ for each item, train on normalized matrix, and predict $\hat{y}^{(i,j)} = w^{(j)} \cdot x^{(i)} + b^{(j)} + \mu_i$.
 - **Outcome**: A new user with no history is defaulted to average item ratings instead of zeros.
 
-#### [06. TensorFlow Implementation of Collaborative Filtering](06_tensorflow_implementation_of_collaborative_filtering.md)
+#### [06. TensorFlow Implementation of Collaborative Filtering](<./6. TensorFlow Implementation of Collaborative Filtering.md>)
 - **Hands-on Lab**: Building collaborative filtering from scratch in TensorFlow.
 - **Core Techniques**:
   - Vectorized loss computation using boolean masking (`tf.gather_nd` / element-wise multiplication).
   - Custom training loops using `tf.GradientTape()`.
   - Gradient optimization with `tf.keras.optimizers.Adam`.
 
-#### [07. Finding Related Items](07_finding_related_items.md)
+#### [07. Finding Related Items](<./7. Finding Related Items.md>)
 - **Geometric Latent Space**: Once features $x^{(i)}$ are learned, items reside in an $n$-dimensional latent semantic space.
 - **Similarity Metrics**:
   - Squared distance: $\|x^{(i)} - x^{(k)}\|^2 = \sum_{l=1}^n (x_l^{(i)} - x_l^{(k)})^2$
@@ -137,32 +137,32 @@ The modules below are ordered sequentially. Each topic builds directly on the th
 
 ### Phase 3: Content-Based Filtering & Modern Deep Architectures
 
-#### [08. Collaborative Filtering vs. Content-Based Filtering](08_collaborative_filtering_vs_content-based_filtering.md)
+#### [08. Collaborative Filtering vs. Content-Based Filtering](<./8. Collaborative Filtering vs. Content-Based Filtering.md>)
 - **Deep-Dive Comparative Analysis**:
   - **Collaborative Filtering**: Discovers serendipitous items; struggles with cold start; doesn't require domain features.
   - **Content-Based Filtering**: Excellent cold-start handling for new items; transparent and explainable; struggles to recommend outside user's current niche.
 - **Decision Matrix**: When to choose which approach in production.
 
-#### [09. Deep Learning for Content-Based Filtering](09_deep_learning_content-based_filtering.md)
+#### [09. Deep Learning for Content-Based Filtering](<./9. Deep Learning for Content-Based Filtering.md>)
 - **Two-Tower Neural Network Architecture**:
   - **User Tower**: Deep Feedforward Network mapping user features (demographics, interaction history, device) $\to$ embedding vector $v_u \in \mathbb{R}^d$.
   - **Item Tower**: Deep Feedforward Network mapping item features (title embeddings, category, age, tags) $\to$ embedding vector $v_m \in \mathbb{R}^d$.
 - **Prediction**: $\hat{y} = v_u \cdot v_m$.
 
-#### [10. Recommending from a Large Catalogue](10_recommending_from_a_large_catalogue.md)
+#### [10. Recommending from a Large Catalogue](<./10. Recommending from a Large Catalogue.md>)
 - **The Production Bottleneck**: Scoring millions of items with a neural network in real-time ($<50\text{ms}$) is computationally infeasible.
 - **The Two-Stage Industry Standard Pipeline**:
   1. **Candidate Retrieval (Candidate Generation)**: Filter millions down to hundreds using fast Approximate Nearest Neighbors (ANN) vector search (e.g., Google ScaNN, FAISS, HNSW).
   2. **Scoring & Ranking**: Pass the candidate subset through a fine-grained, compute-heavy deep ranker.
 
-#### [11. Ethical Use of Recommender Systems](11_ethical_use_of_recommender_systems.md)
+#### [11. Ethical Use of Recommender Systems](<./11. Ethical Use of Recommender Systems.md>)
 - **Systemic Implications**:
   - **Filter Bubbles & Echo Chambers**: Reinforcement feedback loops polarizing users.
   - **Engagement vs. Well-being**: Clickbait optimization vs. long-term user satisfaction.
   - **Bias & Fairness**: Popularity bias, demographic bias, and creator exposure fairness.
 - **Mitigation Techniques**: Exploration bonuses ($\epsilon$-greedy), diversification algorithms, and audit metrics.
 
-#### [12. TensorFlow Implementation of Content-Based Filtering](12_tensorflow_implementation_of_content-based_filtering.md)
+#### [12. TensorFlow Implementation of Content-Based Filtering](<./12. TensorFlow Implementation of Content-Based Filtering.md>)
 - **Hands-on Lab**: Building and training a complete Two-Tower neural network in TensorFlow/Keras.
 - **Components**:
   - Multi-layer dense user tower and item tower with L2 normalization.
@@ -173,22 +173,34 @@ The modules below are ordered sequentially. Each topic builds directly on the th
 
 ### Phase 4: Dimensionality Reduction & Latent Space Mastery (Extension)
 
-#### [13. Reducing the Number of Features (Optional)](13_reducing_the_number_of_features_optional.md)
+#### [13. Reducing the Number of Features (Optional)](<./13. Reducing the Number of Features.md>)
 - **The Curse of Dimensionality**: Why sparse, high-dimensional spaces degrade distance metrics and increase computational overhead.
 - **Compression & Visualization**: Projecting complex feature spaces down to 2D/3D for human interpretability.
 
-#### [14. PCA Algorithm (Optional)](14_pca_algorithm_optional.md)
+#### [14. PCA Algorithm (Optional)](<./14. PCA Algorithm.md>)
 - **Mathematical Foundation**:
   - Feature normalization and zero-centering.
   - Covariance matrix calculation $\Sigma = \frac{1}{m} X^T X$.
   - Singular Value Decomposition (SVD) and Eigenvalue Decomposition.
   - Selecting principal components based on explained variance ratio.
 
-#### [15. PCA in Code (Optional)](15_pca_in_code_optional.md)
+#### [15. PCA in Code (Optional)](<./15. PCA in Code.md>)
 - **Hands-on Lab**:
   - Implementing PCA from scratch using pure NumPy (`np.linalg.svd`).
   - Validation against `sklearn.decomposition.PCA`.
   - Visualizing high-dimensional recommender item embeddings in 2D latent space.
+
+---
+
+## 🚀 Capstone & Portfolio Projects
+
+Theory is only half the battle. To solidify your skills, explore the **[Projects Hub](projects/README.md)** containing 5 production-grade capstone implementations:
+
+1. **[CineMatch](projects/README.md#project-1-cinematch--vectorized-collaborative-filtering-from-scratch)**: Vectorized Collaborative Filtering Engine from Scratch with AutoDiff & Mean Normalization (MovieLens 100K).
+2. **[ClickStream Rec](projects/README.md#project-2-clickstream-rec--implicit-feedback-recommender)**: Implicit Feedback & Binary Cross-Entropy Recommender with Negative Sampling (E-Commerce Clickstream).
+3. **[StreamPulse](projects/README.md#project-3-streampulse--two-tower-deep-retrieval-with-vector-search)**: Two-Tower Deep Neural Network with Vector Search / ScaNN for Sub-10ms Large-Scale Retrieval (MovieLens 1M / Spotify).
+4. **[EmbeddingScope](projects/README.md#project-4-embeddingscope--interactive-3d-latent-space-explorer)**: Interactive 3D Latent Space & Item Similarity Visualizer using PCA Decomposition.
+5. **[FairRec](projects/README.md#project-5-fairrec--algorithmic-bias-audit--serendipity-guardrails)**: Algorithmic Bias Audit, Intra-List Diversity & Filter Bubble Mitigation Suite.
 
 ---
 
@@ -223,27 +235,27 @@ pip install tensorflow numpy pandas scikit-learn matplotlib seaborn jupyterlab
 
 ## 📁 Repository Directory Structure
 
-As the modules are authored, the repository will be populated with comprehensive Markdown guides alongside runnable Jupyter notebooks:
-
 ```text
 Recommender-Systems/
-├── README.md                                          <- You are here (Curriculum Overview)
-├── 01_making_recommendations.md                       <- Module 01 Notes
-├── 02_using_per_item_features.md                      <- Module 02 Notes
-├── 03_collaborative_filtering_algorithm.md            <- Module 03 Notes
-├── 04_binary_labels_favs_likes_clicks.md              <- Module 04 Notes
-├── 05_mean_normalization.md                           <- Module 05 Notes
-├── 06_tensorflow_collaborative_filtering.md           <- Module 06 Notes & Code Walkthrough
-├── 07_finding_related_items.md                        <- Module 07 Notes
-├── 08_collaborative_vs_content_based_filtering.md     <- Module 08 Notes
-├── 09_deep_learning_content_based_filtering.md        <- Module 09 Notes
-├── 10_recommending_from_large_catalogue.md            <- Module 10 Notes
-├── 11_ethical_use_of_recommender_systems.md           <- Module 11 Notes
-├── 12_tensorflow_content_based_filtering.md           <- Module 12 Notes & Code Walkthrough
-├── 13_reducing_number_of_features.md                  <- Module 13 Notes
-├── 14_pca_algorithm.md                                <- Module 14 Notes
-├── 15_pca_in_code.md                                  <- Module 15 Notes & Code Walkthrough
-└── notebooks/                                         <- Executable Jupyter Notebooks (.ipynb)
+├── README.md                                                  <- Curriculum & Repository Master Guide
+├── 1. Making recommendations.md                               <- Module 01: Formulation & Concepts
+├── 2. Using Per-Item Features.md                              <- Module 02: Content-Based Linear Baselines
+├── 3. Collaborative Filtering Algorithm.md                    <- Module 03: Joint Latent Factor Optimization
+├── 4. Binary Labels: Favourites, Likes & Clicks.md            <- Module 04: Implicit Feedback & Logistic Loss
+├── 5. Mean Normalization.md                                   <- Module 05: Cold-Start & Offsets
+├── 6. TensorFlow Implementation of Collaborative Filtering.md <- Module 06: AutoDiff & Custom Loops
+├── 7. Finding Related Items.md                                <- Module 07: Vector Distances & Cosine Sim
+├── 8. Collaborative Filtering vs. Content-Based Filtering.md  <- Module 08: Architecture Trade-Offs
+├── 9. Deep Learning for Content-Based Filtering.md            <- Module 09: Two-Tower Dual Encoders
+├── 10. Recommending from a Large Catalogue.md                 <- Module 10: Retrieval + Ranking Pipeline
+├── 11. Ethical Use of Recommender Systems.md                  <- Module 11: Fairness & Echo Chambers
+├── 12. TensorFlow Implementation of Content-Based Filtering.md<- Module 12: Keras Two-Tower Implementation
+├── 13. Reducing the Number of Features.md                     <- Module 13: Dimensionality Reduction
+├── 14. PCA Algorithm.md                                       <- Module 14: Mathematical PCA & SVD
+├── 15. PCA in Code.md                                         <- Module 15: Pure NumPy & Sklearn PCA
+└── projects/                                                  <- Capstone Projects Hub
+    ├── README.md                                              <- Project Specifications & Roadmap
+    └── coming_soon.txt                                        <- Quick Reference Index
 ```
 
 ---

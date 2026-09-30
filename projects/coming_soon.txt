@@ -1,0 +1,53 @@
+# ==============================================================================
+# RECOMMENDER SYSTEMS: CAPSTONE & PORTFOLIO PROJECTS
+# ==============================================================================
+# All full documentation, mathematical formulations, and project templates
+# are available in: projects/README.md
+# ==============================================================================
+
+1. CINEMATCH: VECTORIZED COLLABORATIVE FILTERING ENGINE (FROM SCRATCH)
+   - Dataset: MovieLens 100K (GroupLens)
+     URL: https://grouplens.org/datasets/movielens/100k/
+   - Tech Stack: Python, NumPy, Pandas, TensorFlow (tf.GradientTape, tf.Variable), Matplotlib
+   - Core Concepts: Joint Matrix Factorization, Item Mean Normalization, Vectorized Binary
+     Masking, Custom AutoDiff Training Loop, Latent Distance / Related Item Discovery.
+   - Why It Matters: Demonstrates deep mathematical understanding from first principles
+     without relying on black-box recommendation packages.
+
+2. CLICKSTREAM REC: IMPLICIT FEEDBACK & NEXT-ITEM RECOMMENDER
+   - Dataset: Retailrocket E-commerce / Instacart Market Basket Analysis
+     URL: https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
+   - Tech Stack: Python, TensorFlow/Keras, SciPy Sparse, Scikit-learn
+   - Core Concepts: Binary Interactions (Clicks, Views, Cart additions), Negative Sampling,
+     Binary Cross-Entropy Loss, HitRate@K, Precision@K, Mean Reciprocal Rank (MRR).
+   - Why It Matters: Over 95% of industrial recommenders operate on implicit interaction
+     streams rather than 1-5 star ratings.
+
+3. STREAMPULSE: TWO-TOWER DEEP RETRIEVAL ENGINE WITH VECTOR SEARCH
+   - Dataset: MovieLens 1M / Spotify Million Playlist Dataset
+     URL: https://grouplens.org/datasets/movielens/1m/
+   - Tech Stack: TensorFlow 2.x (Two-Tower / Dual-Encoder), Google ScaNN / FAISS, FastAPI
+   - Core Concepts: User Tower & Item Tower Neural Embeddings, L2 Normalization, Dot-Product
+     Similarity, Candidate Retrieval vs. Scoring/Ranking, Sub-10ms Approximate Nearest Neighbors.
+   - Why It Matters: The industry standard architecture powering YouTube, Netflix,
+     TikTok, and Spotify large-scale candidate generation.
+
+4. EMBEDDINGSCOPE: INTERACTIVE 3D LATENT SPACE & ITEM SIMILARITY EXPLORER
+   - Dataset: MovieLens Tag Genome / Learned Item Embeddings
+   - Tech Stack: Python, NumPy, Scikit-Learn (PCA), Plotly, Streamlit
+   - Core Concepts: Dimensionality Reduction, Covariance Eigendecomposition, Explained
+     Variance Ratio, High-D to 3D Projection, Semantic Genre Cluster Visualization.
+   - Why It Matters: Solves the black-box interpretability problem by giving visual intuition
+     into latent factor spaces.
+
+5. FAIRREC: ALGORITHMIC BIAS AUDIT & SERENDIPITY GUARDRAILS
+   - Dataset: Synthetic User Interaction Logs + MovieLens
+   - Tech Stack: Python, NumPy, SciPy, Matplotlib, Seaborn
+   - Core Concepts: Popularity Bias Mitigation, Gini Diversity Coefficient, Intra-List
+     Diversity (ILD), Epsilon-Greedy Exploration, Filter Bubble Prevention.
+   - Why It Matters: Modern production platforms prioritize fairness, diversity, and
+     user welfare alongside raw conversion metrics.
+
+==============================================================================
+See `projects/README.md` for complete architectural breakdowns and code roadmaps.
+==============================================================================
